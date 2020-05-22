@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.osman.alexander.asandic.Dashboard"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    >
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+       >
+
+    <technolifestyle.com.imageslider.FlipperLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/flipper"
+        android:elevation="5dp"
+        >
+
+    </technolifestyle.com.imageslider.FlipperLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="5dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quick"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        >
+    </TextView>
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_marginTop="4dp"
+       android:layout_width="match_parent"
+       android:layout_height="150dp"
+       android:orientation="horizontal"
+       android:background="@color/colorPrimaryDark"
+       android:gravity="center"
+       android:elevation="5dp"
+       >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:onClick="openUserProfile"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_height="80dp"
+            android:layout_width="100dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/userImageDash"
+            app:civ_border_color="#FF84E6CE"
+            app:civ_border_width="1dp"
+            android:src="@drawable/user"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textSize="15sp"
+            >
+        </TextView>
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:layout_marginRight="20dp"
+       android:onClick="openNotions"
+       >
+
+       <ImageView
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:src="@drawable/bell"
+           >
+       </ImageView>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/not"
+           android:textSize="15sp"
+           >
+        </TextView>
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:layout_marginRight="10dp"
+       android:onClick="openUserPayment"
+       >
+
+       <ImageView
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:src="@drawable/transaction"
+           >
+       </ImageView>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/pay"
+           android:textSize="15sp"
+           >
+       </TextView>
+   </LinearLayout>
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="110dp"
+       android:orientation="horizontal"
+       android:background="@color/colorPrimaryDark"
+       android:elevation="5dp"
+       android:gravity="center"
+       >
+
+       <LinearLayout
+           android:id="@+id/newsFeedLayout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:onClick="openNewsFeed"
+           android:gravity="center"
+           android:layout_marginRight="20dp"
+           >
+
+           <ImageView
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:src="@drawable/newspaper"
+               >
+           </ImageView>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/news"
+               android:textSize="15sp"
+               android:layout_gravity="center"
+               >
+           </TextView>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:onClick="openAvailableHostels"
+           android:gravity="center"
+           android:layout_marginRight="20dp"
+           >
+
+           <ImageView
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:src="@drawable/hotel"
+               >
+           </ImageView>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/available"
+               android:textSize="15sp"
+               android:layout_gravity="center"
+               >
+           </TextView>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:onClick="openContact"
+           android:gravity="center"
+           android:layout_marginRight="10dp"
+           >
+
+           <ImageView
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:src="@drawable/customerservice"
+               >
+           </ImageView>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/con"
+               android:textSize="15sp"
+               android:layout_gravity="center"
+               >
+           </TextView>
+       </LinearLayout>
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginTop="5dp"
+       android:background="@color/colorPrimaryDark"
+       android:orientation="horizontal"
+       android:gravity="center"
+       >
+
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@drawable/ic_action_gmail"
+           >
+   </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/emailView"
+        android:layout_gravity="center"
+        >
+    </TextView>
+
+</LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:orientation="horizontal"
+           android:background="@color/colorPrimaryDark"
+           android:gravity="center"
+           >
+
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:src="@drawable/ic_action_phone_start"
+               >
+           </ImageView>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:id="@+id/phoneView"
+               android:layout_gravity="center"
+               >
+           </TextView>
+
+
+       </LinearLayout>
+
+   </LinearLayout>
+    </ScrollView>
+</LinearLayout >

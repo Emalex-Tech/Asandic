@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alternative"
+        android:id="@+id/toolbar"
+        >
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_action_name"
+            android:onClick="backToDashboard"
+            android:background="@color/alternative"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileContent"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/discoveryImage"
+                app:civ_border_color="#FF84E6CE"
+                app:civ_border_width="1dp"
+                android:src="@drawable/hotel"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_addphoto"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="70dp"
+                android:onClick="openImageChooser"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user"
+                android:id="@+id/userEditext"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:src="@drawable/ic_action_edit"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:onClick="editUserName"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_toRightOf="@id/genderIcon"
+                android:textSize="15sp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/gender"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/genderIcon"
+                android:src="@drawable/ic_action_person"
+                android:background="@color/colorPrimaryDark"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_toRightOf="@id/emailIcon"
+                android:textSize="15sp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/mail"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailIcon"
+                android:src="@drawable/ic_action_email"
+                android:background="@color/colorPrimaryDark"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/id"
+                android:id="@+id/refNumber"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/camp"
+                android:id="@+id/campus"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="@string/save"
+            android:background="@color/alternate"
+            android:textColor="@color/colorPrimaryDark"
+            android:onClick="saveUserDets"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

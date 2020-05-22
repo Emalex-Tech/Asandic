@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1016076554919",
+    "firebase_url": "https://asandic-app.firebaseio.com",
+    "project_id": "asandic-app",
+    "storage_bucket": "asandic-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016076554919:android:1db932ebe482b21a638182",
+        "android_client_info": {
+          "package_name": "com.osman.alexander.asandic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016076554919-3foq3q8ooqfgmtqmh21va5bhcqr8msvi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.osman.alexander.asandic",
+            "certificate_hash": "d4e709aee972b034772c446ee82d77d3a2e8463b"
+          }
+        },
+        {
+          "client_id": "1016076554919-s52utm10rfca8iasn6ml16974h1tqboa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPEPzbjfBMm8PIPPrJPcm5kC7ziqKNEX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016076554919-s52utm10rfca8iasn6ml16974h1tqboa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
